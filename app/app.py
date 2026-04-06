@@ -22,7 +22,7 @@ def load_models():
     base_path = os.path.dirname(os.path.abspath(__file__))
     models_path = os.path.join(base_path, '..', 'models')
 
-    model        = joblib.load(os.path.join(models_path, 'best_model.pkl'))
+    model = joblib.load(os.path.join(models_path, 'xgboost.pkl'))
     le_wilderness= joblib.load(os.path.join(models_path, 'le_wilderness.pkl'))
     le_soil      = joblib.load(os.path.join(models_path, 'le_soil.pkl'))
     le_target    = joblib.load(os.path.join(models_path, 'le_target.pkl'))
@@ -55,7 +55,7 @@ with st.sidebar:
     soil type, and wilderness area.
     
     **Model:** Random Forest Classifier  
-    **Accuracy:** 99.63%  
+    **Accuracy:** 98.05%
     **Classes:** 7 Forest Types  
     """)
     st.markdown("---")
