@@ -1,0 +1,9 @@
+# Ignore large model files
+models/best_model.pkl
+models/random_forest.pkl
+models/knn.pkl
+
+# Ignore large data files
+data/forest_cover.csv
+data/forest_cover_cleaned.csv
+data/forest_cover_engineered.csv
